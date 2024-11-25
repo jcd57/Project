@@ -1,0 +1,113 @@
+<!-- DEVELOPER Julio Del Pino, IS117-004, Fall 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="images/controller.png" rel="icon" type="image/png">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img alt="Logo" height="40" src="images/controller.png">
+        </a>
+
+        <!-- Responsive Toggle Button -->
+        <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="gamesDropdown"
+                       role="button">
+                        Games
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="bg3.html">Baldur's Gate 3</a></li>
+                        <li><a class="dropdown-item" href="war.html">Warframe</a></li>
+                        <li><a class="dropdown-item" href="ff14.html">Final Fantasy XIV</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Search Bar -->
+            <form class="d-flex">
+                <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <header class="py-5 bg-primary text-white text-center rounded">
+        <h1>Welcome to my site</h1>
+        <p>Here are some games to check out.</p>
+    </header>
+
+    <!-- Games -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Games</h2>
+    </section>
+
+    <!-- Card Section -->
+    <section class="row mt-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <a href="war.html"><img alt="Warframe" class="card-img-top" src="images/warframe-metacard.png"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Warframe</h5>
+                    <p class="card-text">Ninjas play free.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <a href="bg3.html"><img alt="Baldur's Gate 3" class="card-img-top" src="images/bg3.jpg"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Baldur's Gate 3</h5>
+                    <p class="card-text">Award-winning RPG.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <a href="ff14.html"> <img alt="Final Fantasy XIV" class="card-img-top"
+                                          src="images/Final%20Fantasy%20XIV%20Dawntrail.jpeg"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Final Fantasy XIV</h5>
+                    <p class="card-text">Award winning MMO, with something for everybody.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 bg-dark text-white text-center py-3">
+        <span>&copy; Julio Del Pino, 2024 | <a class="text-light" href="terms.html">Terms Of Use</a> | <a
+                class="text-light" href="privacy.html">Privacy Statement</a></span>
+    </footer>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script crossorigin="anonymous"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
