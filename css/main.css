@@ -6,12 +6,13 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #0a0f25; /* Very dark blue background */
-    color: #d0d7e0; /* Light grayish-blue text for readability */
+    background-color: #0a0f25;
+    color: #d0d7e0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     box-sizing: border-box;
     overflow-x: hidden;
+    padding-bottom: 60px;
 }
 
 *, *::before, *::after {
@@ -20,7 +21,7 @@ html, body {
 
 /* Container & Layout */
 .container-fluid {
-    flex: 1; /* Makes the container fill the available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,12 +32,12 @@ html, body {
 /* Navbar */
 .navbar {
     width: 100%;
-    background-color: #0b1a3d; /* Deep dark blue */
-    border-bottom: 2px solid #1e90ff; /* Bright blue accent line */
+    background-color: #0b1a3d;
+    border-bottom: 2px solid #1e90ff;
     padding: 0.5rem 1rem;
     position: sticky;
     top: 0;
-    z-index: 1030; /* Ensures the navbar is always on top */
+    z-index: 1030;
 }
 
 .navbar .navbar-brand img {
@@ -51,7 +52,7 @@ html, body {
 }
 
 .navbar .nav-link:hover {
-    color: #1e90ff !important; /* Bright blue hover effect */
+    color: #1e90ff !important;
 }
 
 .navbar .btn-outline-light {
@@ -65,14 +66,14 @@ html, body {
     color: #0b1a3d;
 }
 
-/* Header / Welcome Section */
+/* Header */
 header {
-    background-color: #0b1a3d; /* Deep dark blue */
-    color: #d0d7e0; /* Light grayish-blue text */
+    background-color: #0b1a3d;
+    color: #d0d7e0;
     text-align: center;
     padding: 2.5rem 1rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     border: 2px solid #1e90ff;
 }
 
@@ -87,23 +88,23 @@ header p {
     margin: 0;
 }
 
-/* Cards */
+/* Card stuff */
 .card {
     max-width: 90%;
     margin: 0 auto;
-    background-color: #10223e; /* Dark navy blue */
-    color: #d0d7e0; /* Light grayish-blue text */
-    border: 1px solid #1e90ff; /* Bright blue border */
+    background-color: #10223e;
+    color: #d0d7e0;
+    border: 1px solid #1e90ff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     text-align: center;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Slight zoom */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+    transform: scale(1.05); /* Card grows when hover on */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
 }
 
 .card img {
@@ -116,7 +117,7 @@ header p {
 }
 
 .card-title {
-    color: #1e90ff; /* Bright blue */
+    color: #1e90ff;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
@@ -127,6 +128,24 @@ header p {
     font-size: 0.9rem;
     text-align: center;
 }
+/* video */
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid #1e90ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* image */
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #10223e;
+    border: 1px solid #1e90ff;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
 
 /* Footer */
 .footer {
@@ -135,20 +154,21 @@ header p {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    border-top: 2px solid #1e90ff; /* Bright blue border at the top */
-    position: relative; /* Ensures footer is in the flow of the document */
+    border-top: 2px solid #1e90ff;
+    bottom: 0;
+    position: fixed; /* the reason why i had to make a new .body */
 }
 
 /* Buttons */
 .btn {
-    background-color: #1e90ff; /* Bright blue */
-    color: #0a0f25; /* Dark background for text contrast */
+    background-color: #1e90ff;
+    color: #0a0f25;
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0b1a3d; /* Deep dark blue on hover */
+    background-color: #0b1a3d;
     color: #d0d7e0;
 }
 
@@ -161,19 +181,19 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #ffcc33; /* Slightly golden hover color */
+    color: #ffcc33;
 }
 
 /* Search Bar */
 .navbar form .form-control {
-    background-color: #0b1a3d; /* Dark background */
-    border: 1px solid #1e90ff; /* Bright blue border */
-    color: #d0d7e0; /* Light text */
+    background-color: #0b1a3d;
+    border: 1px solid #1e90ff;
+    color: #d0d7e0;
     transition: all 0.3s ease;
 }
 
 .navbar form .form-control::placeholder {
-    color: #7788aa; /* Muted grayish-blue placeholder */
+    color: #7788aa;
 }
 
 .navbar form .btn {
@@ -194,6 +214,9 @@ a:hover {
         margin: 0;
         text-align: center;
     }
+    body{
+        padding-bottom: 50px;
+    }
 
     header {
         padding: 2rem 1rem;
@@ -209,6 +232,11 @@ a:hover {
 
     .footer {
         font-size: 0.9rem;
-        padding: 1.5rem 1rem;
+        height: 50px;
+        padding: 0.5rem;
     }
+    .video-container iframe {
+        height: 350px;
+    }
+
 }
